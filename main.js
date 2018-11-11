@@ -98,19 +98,21 @@ function cardSelected(event) {
         messageEle.innerText = `${currentPlayer}, please select another card`;
     }
 }
-//  // Step 7 - Check if the board is full
-//  ... {
+//   Step 7 - Check if the board is full
+//  if (document.querySelector(`.flipped`) === 52){
 //    // Step 7a - Check if one of the players has won
-//    ... {
+//    if (playerScore[0] > playerScore[1]) {
 //      // Step 7b - Tell the player they've won
 //      // (use string interpolation to show which player you're addressing)
-//      ... = `..., you won!!! Congratulations!`;
-//        } ... {
+//      message.textContent = `${player[0]}, you won!!! Congratulations!`;
+//        } else if(playerScore[1] > playerScore[0]) {
 //      // Step 7c - Tell the players that the game has ended in a tie
-//      ... = "The game was a tie! Nice try!";
+//      message.textContent = `${player[0]},you won`;
+//        } else {
+//        		message.textContent = `it's a tie`;
 //        }
 //    }
-//}
+// }
 
 // Take it further - Reset the board allowing the user to play again (Worth 20% of the final grade)
 /*
